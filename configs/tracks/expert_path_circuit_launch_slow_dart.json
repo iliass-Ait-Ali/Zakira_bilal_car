@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "camera": {
+    "img_w": 255,
+    "img_h": 255,
+    "img_d": 3,
+    "img_enc": "PNG",
+    "fov": 150,
+    "fish_eye_x": 0,
+    "fish_eye_y": 0,
+    "offset_x": 0,
+    "offset_y": 0,
+    "offset_z": 0
+  },
+  "preprocess": {
+    "width": 160,
+    "height": 96,
+    "crop_top": 0.3,
+    "crop_bottom": 0.05
+  },
+  "model": {
+    "frames": 1,
+    "frame_spacing_s": 0.05,
+    "horizons_s": [
+      0.0,
+      0.25,
+      0.5
+    ],
+    "channels": [
+      24,
+      36,
+      48,
+      64,
+      64
+    ],
+    "dense": [
+      100,
+      50
+    ],
+    "dropout": 0.15,
+    "speed_scale": 10.0
+  },
+  "data": {
+    "seed": 42,
+    "val_fraction": 0.2,
+    "test_fraction": 0.2,
+    "min_groups": 5,
+    "max_gap_s": 0.15,
+    "time_tolerance_s": 0.06,
+    "max_decision_age_s": 0.15,
+    "max_abs_cte": 1.0,
+    "steering_bins": [
+      -1.01,
+      -0.6,
+      -0.2,
+      -0.05,
+      0.05,
+      0.2,
+      0.6,
+      1.01
+    ],
+    "balance_power": 0.5,
+    "max_sample_weight": 4.0,
+    "recovery_weight": 1.5,
+    "allowed_sources": [
+      "baseline"
+    ],
+    "flip_probability": 0.5,
+    "brightness": 0.15,
+    "contrast": 0.15,
+    "noise_std": 0.01,
+    "cte_reference": {}
+  },
+  "training": {
+    "seed": 42,
+    "device": "auto",
+    "threads": 4,
+    "batch_size": 64,
+    "workers": 0,
+    "epochs": 80,
+    "learning_rate": 0.0003,
+    "min_learning_rate": 1e-05,
+    "weight_decay": 0.0001,
+    "huber_beta": 0.1,
+    "loss_weights": [
+      0.6,
+      0.25,
+      0.15
+    ],
+    "clip_grad_norm": 1.0,
+    "patience": 12,
+    "min_delta": 0.0001,
+    "amp": true,
+    "deterministic": true
+  },
+  "control": {
+    "frequency_hz": 20,
+    "steering_rate": 5.0,
+    "steering_tau_s": 0.06,
+    "speed_straight": 1.8,
+    "speed_turn": 0.7,
+    "turn_gain": 6.0,
+    "speed_rise_per_s": 1.0,
+    "throttle_kp": 0.35,
+    "throttle_ki": 0.08,
+    "integral_limit": 1.5,
+    "throttle_ff": 0.08,
+    "throttle_max": 0.5,
+    "brake_kp": 1.0,
+    "brake_max": 0.7,
+    "brake_enter_error": 0.35,
+    "brake_exit_error": 0.1,
+    "emergency_brake": 1.0
+  },
+  "runtime": {
+    "host": "127.0.0.1",
+    "port": 9091,
+    "scene": "circuit_launch",
+    "poll_s": 0.005,
+    "timeout_s": 1.5,
+    "max_frame_age_s": 0.3,
+    "startup_timeout_s": 20,
+    "manual_throttle": 0.2,
+    "manual_steering_rate": 2.0,
+    "manual_return_rate": 3.0,
+    "baseline_throttle": 0.15,
+    "baseline_gain": 10.0,
+    "inference_device": "cpu"
+  },
+  "baseline": {
+    "gain": 10.0,
+    "speed_straight": 1.0,
+    "speed_turn": 0.7,
+    "steering_tau_s": 0.06,
+    "steering_rate": 5.0,
+    "throttle_max": 0.18,
+    "throttle_ff": 0.08,
+    "speed_kp": 0.35,
+    "speed_ki": 0.08,
+    "max_steering": 1.0,
+    "startup_s": 0.0,
+    "startup_max_steering": 0.4,
+    "guide": "path",
+    "path_file": "configs/paths/circuit_launch.json",
+    "lookahead": 0.8,
+    "curvature_per_steering": 1.372,
+    "path_abort": 2.0,
+    "perturb": {
+      "every_s": 3.0,
+      "duration_s": 0.5,
+      "steering": 0.3,
+      "recovery_s": 1.0,
+      "skip_nodes": [
+        [
+          80,
+          92
+        ],
+        [
+          100,
+          116
+        ]
+      ],
+      "max_teacher_steering": 0.6
+    }
+  },
+  "evaluation": {
+    "cte_limit": null,
+    "minimum_lap_s": 5.0,
+    "official_score": null
+  }
+}

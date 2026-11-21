@@ -1,0 +1,21 @@
+{
+  "sdsandbox": {
+    "commit": "ec04c400f045222375ec82e649bb051fb17aad41",
+    "files": [
+      "sdsim/Assets/Scripts/Car.cs",
+      "sdsim/Assets/Scripts/UnityStandardCarAdapter.cs",
+      "sdsim/Assets/Scripts/tcp/TcpCarHandler.cs",
+      "sdsim/Assets/Standard Assets/Vehicles/Car/Scripts/CarController.cs",
+      "sdsim/Assets/Scripts/JoystickCarControl.cs"
+    ]
+  },
+  "gym-donkeycar": {
+    "commit": "a1f4ca6961e17a6929c1f2e883358a1edafb479d",
+    "files": [
+      "gym_donkeycar/core/client.py",
+      "gym_donkeycar/core/util.py",
+      "LICENSE",
+      "pyproject.toml"
+    ]
+  }
+}

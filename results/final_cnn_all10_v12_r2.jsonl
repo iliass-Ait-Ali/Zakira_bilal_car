@@ -1,0 +1,5 @@
+{"scene": "roboracingleague_1", "run": "d73882c0e1f8414d891c7cf9a5811447", "seconds": 120.0, "seconds_without_collision": 120.0, "collision": null, "laps_progress": 3.05, "stopped_fraction": 0.0, "mean_speed": 1.25, "fault": null}
+{"scene": "warren", "run": "0f16d0f96757478daaebfccf9bc6c4dd", "seconds": 119.9, "seconds_without_collision": 8.2, "collision": "Plane (3)", "laps_progress": 0.12, "stopped_fraction": 0.02, "mean_speed": 0.82, "fault": null}
+{"scene": "mini_monaco", "run": "6947d0fad9db4be8aab8bd2aaebbe09c", "seconds": 119.7, "seconds_without_collision": 24.6, "collision": "RepeatObjectAlong", "laps_progress": 0.32, "stopped_fraction": 0.01, "mean_speed": 0.89, "fault": null}
+{"scene": "generated_road", "run": "125bee68c58b4aa9b057365305d554c6", "seconds": 120.0, "seconds_without_collision": 120.0, "collision": null, "laps_progress": 0.51, "stopped_fraction": 0.0, "mean_speed": 1.06, "fault": null}
+{"scene": "generated_track", "run": "bc100c5c836e4a08a72891ca5bf4b554", "seconds": 119.7, "seconds_without_collision": 119.7, "collision": null, "laps_progress": 3.53, "stopped_fraction": 0.0, "mean_speed": 0.84, "fault": null}

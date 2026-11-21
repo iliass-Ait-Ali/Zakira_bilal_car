@@ -1,0 +1,22 @@
+# Machine-specific or regenerable
+.venv/
+__pycache__/
+*.pyc
+tests/.tmp/
+.audit_tools/
+logs/
+
+# Too big for GitHub (kept in the Zakira_bilal_car folder): ~29 GB of recorded images and the simulator
+data/
+DonkeySimWin/
+# Official DonkeyCar repository copy (has its own git history): https://github.com/autorope/donkeycar
+src/donkeycar/
+
+# Models: only the main trained networks (best.pt + their configs and metrics)
+runs/*
+!runs/cnn_all10_v14/
+!runs/cnn_all10_v13/
+!runs/cnn_all10_v11/
+!runs/cnn_multi4_v4/
+!runs/cnn_lstm_v5/
+runs/*/last.pt

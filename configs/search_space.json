@@ -1,0 +1,11 @@
+{
+  "status": "proposed_not_executed",
+  "policy": "One staged change at a time, held-out groups unchanged; no automatic launches.",
+  "stages": [
+    {"name": "learning_rate", "changes": [{"training.learning_rate": 0.0001}, {"training.learning_rate": 0.0006}]},
+    {"name": "regularization", "changes": [{"model.dropout": 0.1, "training.weight_decay": 0.00003}, {"model.dropout": 0.25, "training.weight_decay": 0.0003}]},
+    {"name": "temporal_ablation", "changes": [{"model.frames": 3}]},
+    {"name": "speed_after_successful_laps", "changes": [{"control.speed_straight": 6.0}, {"control.turn_gain": 2.0}, {"control.speed_turn": 2.5}]},
+    {"name": "steering_after_log_review", "changes": [{"control.steering_tau_s": 0.02}, {"control.steering_rate": 6.0}]}
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "date": "2026-11-15",
+  "listener": {
+    "pid": 9956,
+    "process": "donkey_sim",
+    "executable": "DonkeySimWin/DonkeySimWin/donkey_sim.exe",
+    "port": 9091
+  },
+  "unit_tests_passed": 35,
+  "training_executed": false,
+  "dataset_recording": false,
+  "runs": [
+    {
+      "directory": "runs\\connection_checks\\diagnose_ee49eca5ee0b49f8a1c63907d45a015e",
+      "summary": {
+        "elapsed_s": 1.102,
+        "last_stage": "DISCONNECTED",
+        "session_state": "ready",
+        "messages_received": 10,
+        "message_types": {
+          "car_loaded": 2,
+          "scene_names": 1,
+          "telemetry": 7
+        },
+        "telemetry_packets": 7,
+        "images_decoded": 3,
+        "decoded_sizes": {
+          "255x255 RGB": 3
+        },
+        "images_rejected": 1,
+        "rejection_reasons": {
+          "wrong_resolution": 1
+        },
+        "protocol_errors": 0,
+        "controls_sent": 1,
+        "nonzero_throttle_sent": 0,
+        "network_errors": [],
+        "first_events_s": {
+          "CONNECT": 0.000695,
+          "CONNECTED": 0.01572,
+          "SIM": 0.021128,
+          "SCENE": 0.023314,
+          "CAR_READY": 0.678531,
+          "CAR": 0.678684,
+          "TELEMETRY": 0.763493,
+          "CAMERA_CONFIG": 0.880105,
+          "REJECTED": 0.923346,
+          "CAMERA": 0.984368,
+          "READY": 0.984538,
+          "IMAGE_SAVED": 0.991721,
+          "DIAGNOSE_OK": 1.085826,
+          "STOP": 1.086505,
+          "DISCONNECTED": 1.101114
+        }
+      },
+      "result": {
+        "success": true,
+        "verified_images": 3,
+        "failure": null
+      }
+    },
+    {
+      "directory": "runs\\connection_checks\\61edbf5e423b43fdb1d6e84b9c7940c7",
+      "summary": {
+        "elapsed_s": 5.95,
+        "last_stage": "DISCONNECTED",
+        "session_state": "ready",
+        "messages_received": 111,
+        "message_types": {
+          "car_loaded": 2,
+          "telemetry": 107,
+          "scene_names": 1,
+          "collision_with_starting_line": 1
+        },
+        "telemetry_packets": 107,
+        "images_decoded": 101,
+        "decoded_sizes": {
+          "255x255 RGB": 101
+        },
+        "images_rejected": 0,
+        "rejection_reasons": {},
+        "protocol_errors": 0,
+        "controls_sent": 50,
+        "nonzero_throttle_sent": 50,
+        "network_errors": [],
+        "first_events_s": {
+          "CONNECT": 0.000364,
+          "CONNECTED": 0.019611,
+          "SIM": 0.019963,
+          "SCENE": 0.034417,
+          "TELEMETRY": 0.075096,
+          "CAR_READY": 0.607593,
+          "CAR": 0.607882,
+          "CAMERA_CONFIG": 0.81268,
+          "CAMERA": 0.893337,
+          "READY": 0.893464,
+          "DRIVE": 0.893504,
+          "STOP": 5.927543,
+          "DISCONNECTED": 5.929992
+        }
+      },
+      "motion_evidence": {
+        "decisions": 50,
+        "sim_time_span_s": 4.999999836087229,
+        "speed_max_telemetry_units": 1.20223224163055,
+        "nonzero_throttle_echoes": 49,
+        "first_position": [
+          2.98301005363464,
+          0.0699820965528488,
+          -3.24458956718445
+        ],
+        "last_position": [
+          -0.470702737569809,
+          0.070224292576313,
+          -3.23844432830811
+        ],
+        "position_delta_norm": 3.45371826684647
+      },
+      "end": {
+        "fault": null,
+        "stopped_monotonic": 202726.7322045
+      }
+    },
+    {
+      "directory": "runs\\connection_checks\\4a698e25423144fc8ee94efb41b03af7",
+      "summary": {
+        "elapsed_s": 3.942,
+        "last_stage": "DISCONNECTED",
+        "session_state": "ready",
+        "messages_received": 70,
+        "message_types": {
+          "car_loaded": 2,
+          "scene_names": 1,
+          "telemetry": 66,
+          "collision_with_starting_line": 1
+        },
+        "telemetry_packets": 66,
+        "images_decoded": 62,
+        "decoded_sizes": {
+          "255x255 RGB": 62
+        },
+        "images_rejected": 1,
+        "rejection_reasons": {
+          "wrong_resolution": 1
+        },
+        "protocol_errors": 0,
+        "controls_sent": 47,
+        "nonzero_throttle_sent": 47,
+        "network_errors": [],
+        "first_events_s": {
+          "CONNECT": 0.000445,
+          "CONNECTED": 0.002153,
+          "SIM": 0.013708,
+          "SCENE": 0.017212,
+          "CAR_READY": 0.589249,
+          "CAR": 0.589402,
+          "TELEMETRY": 0.647667,
+          "CAMERA_CONFIG": 0.792383,
+          "REJECTED": 0.828716,
+          "CAMERA": 0.879817,
+          "READY": 0.879944,
+          "DRIVE": 0.879992,
+          "STOP": 3.920636,
+          "DISCONNECTED": 3.922151
+        }
+      },
+      "motion_evidence": {
+        "decisions": 47,
+        "sim_time_span_s": 2.999999955296517,
+        "speed_max_telemetry_units": 0.859447240829468,
+        "nonzero_throttle_echoes": 46,
+        "first_position": [
+          2.98301005363464,
+          0.0699820965528488,
+          -3.24458956718445
+        ],
+        "last_position": [
+          1.5848228931427,
+          0.0702237114310265,
+          -3.22138357162476
+        ],
+        "position_delta_norm": 1.3983797454097295
+      },
+      "end": {
+        "fault": null,
+        "stopped_monotonic": 202856.8216138
+      }
+    },
+    {
+      "directory": "runs\\connection_checks\\diagnose_2e68ff73e7ba4691a3280a10d05b8ab6",
+      "summary": {
+        "elapsed_s": 0.808,
+        "last_stage": "DISCONNECTED",
+        "session_state": "ready",
+        "messages_received": 10,
+        "message_types": {
+          "scene_selection_ready": 1,
+          "scene_names": 1,
+          "car_loaded": 1,
+          "telemetry": 7
+        },
+        "telemetry_packets": 7,
+        "images_decoded": 3,
+        "decoded_sizes": {
+          "255x255 RGB": 3
+        },
+        "images_rejected": 1,
+        "rejection_reasons": {
+          "wrong_resolution": 1
+        },
+        "protocol_errors": 0,
+        "controls_sent": 1,
+        "nonzero_throttle_sent": 0,
+        "network_errors": [],
+        "first_events_s": {
+          "CONNECT": 0.000834,
+          "CONNECTED": 0.014358,
+          "SIM": 0.021399,
+          "SCENE": 0.039024,
+          "CAR_READY": 0.398856,
+          "CAR": 0.398965,
+          "TELEMETRY": 0.459703,
+          "CAMERA_CONFIG": 0.601313,
+          "REJECTED": 0.632612,
+          "CAMERA": 0.697527,
+          "READY": 0.697654,
+          "DIAGNOSE_OK": 0.797227,
+          "STOP": 0.79765,
+          "DISCONNECTED": 0.806834
+        }
+      },
+      "result": {
+        "success": true,
+        "verified_images": 3,
+        "failure": null
+      }
+    }
+  ]
+}

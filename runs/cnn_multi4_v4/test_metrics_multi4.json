@@ -1,0 +1,13 @@
+{
+  "checkpoint_sha256": "e0495250f0d0b2f80380c51a761fb99100796ae0c7dd39c31964a2f5f0d92b7a",
+  "n": 23290,
+  "mae_by_horizon": [
+    0.01477079652249813,
+    0.027232211083173752,
+    0.04129064455628395
+  ],
+  "straight_mae": 0.011407610960304737,
+  "turn_mae": 0.017421739175915718,
+  "recovery_mae": null,
+  "note": "Offline imitation errors do not measure closed-loop driving success."
+}
