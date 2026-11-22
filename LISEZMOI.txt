@@ -1,0 +1,22 @@
+ZAKIRA_BILAL_CAR - version courte (voiture autonome par deep learning)
+========================================================================
+
+Un reseau de neurones (CNN) conduit seul une voiture dans le simulateur DonkeyCar :
+il regarde l'image de la camera et decide le volant, l'accelerateur et le frein.
+Modele : v14 (runs/cnn_all10_v14/best.pt). Resultat : 10/10 circuits reussis
+(2 minutes sans collision et sans sortir de la route), puis 8/10 au 2e passage.
+
+CE QU'IL FAUT : Windows 10/11 et Python 3.12 ou 3.13 (https://www.python.org/downloads/,
+cocher "Add python.exe to PATH" pendant l'installation). Pas besoin de carte graphique.
+
+1. Dezipper le dossier (clic droit > Extraire tout). Ne pas lancer depuis le zip.
+2. Double-cliquer INSTALLER.bat  (une seule fois, 5 a 10 minutes, Internet necessaire).
+3. Double-cliquer LANCER_VOITURE.bat, taper le numero d'un circuit (1 a 10).
+   Le simulateur s'ouvre, la voiture roule seule 2 minutes, puis la fenetre se ferme.
+   Si Windows affiche "Windows a protege votre ordinateur" : "Informations
+   complementaires" > "Executer quand meme". Le pare-feu peut demander : "Autoriser".
+
+Pour tout comprendre (comment le reseau a ete entraine, les professeurs, les resultats) :
+docs/RAPPORT_COMPLET.md  (s'ouvre avec n'importe quel editeur, ou sur GitHub).
+Le projet complet (avec le code d'entrainement) :
+https://github.com/iliass-Ait-Ali/Zakira_bilal_car

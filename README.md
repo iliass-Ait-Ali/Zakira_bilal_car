@@ -9,7 +9,18 @@ Une voiture du simulateur DonkeyCar roule **seule sur les 10 circuits**, conduit
 | Mode de conduite | Essais réussis (2 minutes, aucune collision, pas de sortie de route) |
 |---|---|
 | **100 % réseau** (volant, accélérateur et frein appris) : configs `configs/tracks/cnn_v14n_<circuit>.json` | 10/10 puis 8/10, soit **18 essais sur 20** |
+| **100 % réseau**, démonstration du 22 novembre ([results/final_cnn_all10_v14_demo.jsonl](results/final_cnn_all10_v14_demo.jsonl)) | **9/10** : aucune collision ; sur sparkfun_avc, 2,5 s à 33 cm de la ligne (limite 30 cm) |
 | Volant appris, vitesse par une petite règle : configs `configs/tracks/cnn_v14_<circuit>.json` | **10/10** |
+
+### Essayer en 3 clics (Windows, sans carte graphique)
+
+1. Télécharger **`Zakira_bilal_car_court.zip`** (239 Mo : modèle v14 + simulateur) dans la page **[Releases](https://github.com/iliass-Ait-Ali/Zakira_bilal_car/releases)**, puis le dézipper.
+2. Installer Python 3.12 ou 3.13 ([python.org](https://www.python.org/downloads/), cocher « Add python.exe to PATH »), puis double-cliquer **`INSTALLER.bat`** (une seule fois).
+3. Double-cliquer **`LANCER_VOITURE.bat`** et choisir un circuit de 1 à 10 : la voiture roule seule 2 minutes.
+
+Les instructions sont aussi dans [LISEZMOI.txt](LISEZMOI.txt).
+
+### Pour aller plus loin (projet complet)
 
 Faire conduire le modèle final sur un circuit. Le simulateur s'ouvre et se ferme tout seul ; Git Bash est nécessaire.
 
